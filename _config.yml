@@ -1,0 +1,11 @@
+
+
+# Site settings
+title: UCC DMCS Club
+email: matthew.wang@ucc.on.ca
+description: > # The UCC Digital Media Computer Science Club
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://dmcs.tech" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown

@@ -1,0 +1,77 @@
+---
+title: DMCS Club
+---
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+      <div class="container">
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="img-responsive" src="{{site.baseurl}}/img/dmcs-transparent.png" alt="DMCS Logo" />
+            </div>
+            <div class="col-sm-8">
+              <h1>DMCS Club</h1>
+              <h2><small><span id="quote"></span></small></h2>
+              <p class="lead">
+                Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.
+              </p>
+              <a href="#" class="btn btn-primary">Register</a> <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="well">
+              <h2>Problem of the Month: FizzBuzz</h2>
+              <p>
+                Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
+              </p>
+              <a href="http://c2.com/cgi/wiki?FizzBuzzTest">From here.</a> <a href="https://github.com/uccdmcs/problems"><span class="fa fa-github"></span> Submissions.</a>
+            </div>
+            <div class="well">
+              <h2>Next Event</h2>
+              <h3>Coming soon!</h3>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h2>Latest News</h2>
+              </div>
+              <div class="panel-body">
+                {% for post in site.posts limit: 5 %}
+                  <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} <small>{{ post.date | date: "%b %-d, %Y" }}</small></a></h3>
+                {% endfor %}
+              </div>
+              <div class="panel-footer">
+                <p>subscribe by <a href="http://eepurl.com/cffc9X ">email</a> or <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% include footer.html %}
+    <script>
+      quotes = [
+        {
+    		  "quote": "a team of elite hackers"
+        },
+        {
+    		  "quote": "the cool kids club"
+    	  },
+        {
+          "quote": "spiders are good web developers"
+        }
+      ];
+      var randomQuote = quotes[Math.floor(Math.random() *quotes.length)];
+      $("#quote").html(randomQuote["quote"]);
+    </script>
+  </body>
+
+</html>
