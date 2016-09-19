@@ -22,7 +22,10 @@ title: DMCS Club
           <div class="col-sm-4">
               <div class="well">
               <h2>Next Event:</h2>
-              <h3>Club meeting this Thursday (September 15)</h3>
+              <h3>Club meeting this Tuesday (September 20)
+              <?
+                echo "testing";
+              ?></h3>
             </div>
           </div>
           <div class="col-sm-4">
