@@ -21,7 +21,7 @@ title: DMCS Club
               <p class="lead">
                 Welcome to the <b>D</b>igital <b>M</b>edia and <b>C</b>omputer <b>S</b>cience
               </p>
-              <a href="#" class="btn btn-primary">Register</a> <a href="{{site.baseurl}}/about/" class="btn btn-primary">Learn More</a>
+              <a href="{{site.baseurl}}/about/" class="btn btn-primary">Learn More</a>
             </div>
           </div>
         </div>
@@ -32,7 +32,14 @@ title: DMCS Club
                <h3>First Club Meeting: Tuesday September 20th</h3>
             </div>
           </div>
-          <div class="col-sm-8">
+          <div class="col-sm-4">
+            <div class="well">
+              <h2>Student</h2>
+               <h3>Are you a student at the club?</h3>
+               <a href="students" class="btn btn-md btn-primary">Students</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
             <div class="panel panel-primary">
               <div class="panel-heading">
                 <h2>Latest News</h2>
@@ -52,33 +59,23 @@ title: DMCS Club
     {% include footer.html %}
     <script>
       quotes = [
-        {
-          "quote": "Spiders are great web developers."
-        },
-        {
-          "quote": "Computers aren't scary: they don't byte!"
-        },
-        {
-          "quote": "I love long walks(on the beach)"
-        },
-        {
-          "quote": "It's not a bug, it's a feature!"
-        },
-        {
-          "quote": "There are 10 kinds of people in the world: those who understand binary, and those who don't."
-        },
-        {
-          "quote": "[\"hip\",\"hip\"]"
-        },
-        {
-          "quote": "To understand what recursion is, you must first understand recursion."
-        },
-        {
-          "quote": "A SQL query walks into a bar, sees two tables and asks, \"Can I join you?\""
-        }
+         "Spiders are great web developers.",
+         "Computers aren't scary: they don't byte!",
+         "I love long walks(on the beach)",
+         "It's not a bug, it's a feature!",
+         "There are 10 kinds of people in the world: those who understand binary, and those who don't.",
+         "[\"hip\",\"hip\"]",
+         "To understand what recursion is, you must first understand recursion.",
+         "A SQL query walks into a bar, sees two tables and asks, \"Can I join you?\"",
+         "Error 404: quote not found",
+         "<span class='blink'>BLINK!!</span>",
+         "💻 💾 🎛 🖥"
       ];
-      var randomQuote = quotes[Math.floor(Math.random() *quotes.length)];
-      $("#quote").html(randomQuote["quote"]);
+      var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+      $("#quote").html(randomQuote);
+      window.setInterval(function(){
+        $('.blink').toggle();
+      }, 250);
     </script>
   </body>
 
