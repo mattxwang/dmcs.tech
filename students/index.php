@@ -16,16 +16,15 @@ title: DMCS Club
               <p class="lead">
                 Welcome to the <b>D</b>igital <b>M</b>edia and <b>C</b>omputer <b>S</b>cience
               </p>
-              <div class="text-center"><a href="checkin.html" class="btn btn-lg btn-primary">Check in</a></div>
+              <?php if (!$_GET["checkedin"]): ?>
+                <div class="text-center"><a href="check-in.php" class="btn btn-lg btn-primary">Check in</a></div>
+              <?php endif; ?>
         </div>
         <div class="row">
           <div class="col-sm-4">
               <div class="well">
               <h2>Next Event:</h2>
-              <h3>Club meeting this Tuesday (September 20)
-              <?
-                echo "testing";
-              ?></h3>
+              <h3>Club meeting this Tuesday (September 20)</h3>
             </div>
           </div>
           <div class="col-sm-4">
