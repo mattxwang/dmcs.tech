@@ -5,13 +5,13 @@
 	$code  = htmlspecialchars($_POST['code'],  ENT_QUOTES);
 	$date  = date('Y-m-d');
 
-	$query = "SELECT * FROM robotics.attendance WHERE id=1;";
+	$query = "SELECT * FROM dmcs.attendance WHERE id=1;";
 
 	// execute query
 	$result = mysql_query($query) or die ("Error in query: ".mysql_error());
 
 	if ($code == mysql_fetch_array($result)["date"]){
-		$query = "INSERT INTO robotics.attendance VALUES ('$email', '$date', NULL);";
+		$query = "INSERT INTO dmcs.attendance VALUES ('$email', '$date', NULL);";
 
 		// execute query
 		$result = mysql_query($query) or die ("Error in query: ".mysql_error());
