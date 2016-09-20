@@ -1,0 +1,3 @@
+[submodule "students/challenger"]
+	path = students/challenger
+	url = https://github.com/uccdmcs/challenger.git
