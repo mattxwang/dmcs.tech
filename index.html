@@ -50,7 +50,7 @@ title: DMCS Club
                 {% endfor %}
               </div>
               <div class="panel-footer">
-                <p>subscribe by <a href="http://eepurl.com/cffc9X ">email</a> or <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
+                <p>subscribe by <!--<a href="http://eepurl.com/cffc9X ">email</a> or--> <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
               </div>
             </div>
           </div>
@@ -68,14 +68,10 @@ title: DMCS Club
          "To understand what recursion is, you must first understand recursion.",
          "A SQL query walks into a bar, sees two tables and asks, \"Can I join you?\"",
          "Error 404: quote not found",
-         "<span class='blink'>BLINK!!</span>",
          "💻 💾 🎛 🖥"
       ];
       var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
       $("#quote").html(randomQuote);
-      window.setInterval(function(){
-        $('.blink').toggle();
-      }, 250);
     </script>
   </body>
 
