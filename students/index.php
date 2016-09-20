@@ -27,6 +27,7 @@ title: DMCS Club
             <div class="well">
             <h2>Next Event:</h2>
             <h3>Club meeting this Tuesday (September 20)</h3>
+            <h3>Fill out <a href="https://malsf21.typeform.com/to/l0PaV6">this survey</a></h3>
           </div>
         </div>
         <div class="col-sm-4">
