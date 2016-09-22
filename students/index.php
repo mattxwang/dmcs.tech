@@ -44,7 +44,7 @@ title: DMCS Club
             <h2>Get Node Here:</h2>
             <p>
               Click on the button to download Node.js
-              <div class="text-center"><a href="challenger" class="btn btn-lg btn-primary">https://nodejs.org/dist/v4.5.0/node-v4.5.0.pkg</a></div>
+              <div class="text-center"><a href="https://nodejs.org/dist/v4.5.0/node-v4.5.0.pkg" class="btn btn-lg btn-primary">Node.js</a></div>
             </p>
           </div>
         </div>
