@@ -30,7 +30,7 @@ title: DMCS Club
             <h3>Fill out <a href="https://malsf21.typeform.com/to/l0PaV6">this survey</a></h3>
           </div>
         </div>
-        <div class="col-sm-4">
+        <!-- <div class="col-sm-4">
           <div class="well">
             <h2>Want more problems?</h2>
             <p>
@@ -38,7 +38,17 @@ title: DMCS Club
               <div class="text-center"><a href="challenger" class="btn btn-lg btn-primary">Challenger</a></div>
             </p>
           </div>
+        </div> -->
+        <div class="col-sm-4">
+          <div class="well">
+            <h2>Get Node Here:</h2>
+            <p>
+              Click on the button to download Node.js
+              <div class="text-center"><a href="challenger" class="btn btn-lg btn-primary">https://nodejs.org/dist/v4.5.0/node-v4.5.0.pkg</a></div>
+            </p>
+          </div>
         </div>
+        
         <div class="col-sm-4">
           <div class="panel panel-primary">
             <div class="panel-heading">
