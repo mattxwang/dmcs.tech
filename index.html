@@ -25,29 +25,6 @@ title: DMCS Club
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="well">
-              <h2>Next Event</h2>
-               <h3>First Club Meeting: Tuesday September 20th</h3>
-            </div>
-          </div>
-          <div class="col-sm-8">
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h2>Latest News</h2>
-              </div>
-              <div class="panel-body">
-                {% for post in site.posts limit: 5 %}
-                  <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} <small>{{ post.date | date: "%b %-d, %Y" }}</small></a></h3>
-                {% endfor %}
-              </div>
-              <div class="panel-footer">
-                <p>subscribe by <!--<a href="http://eepurl.com/cffc9X ">email</a> or--> <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     {% include footer.html %}
     <script>
@@ -61,7 +38,9 @@ title: DMCS Club
          "To understand what recursion is, you must first understand recursion.",
          "A SQL query walks into a bar, sees two tables and asks, \"Can I join you?\"",
          "Error 404: quote not found",
-         "💻 💾 🎛 🖥"
+         "💻 💾 🎛 🖥",
+         "#bermuda-triangle {display: none;}",
+         "#china {border-top-style: solid;}"
       ];
       var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
       $("#quote").html(randomQuote);
