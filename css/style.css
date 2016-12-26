@@ -2,12 +2,10 @@
   padding-top: 70px;
 }
 
-
 .header_title {
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
-	text-align: center;
 	letter-spacing: 2px;
 	color:#e95420;
 	padding: 7px 21px 7px 21px;
@@ -16,9 +14,6 @@
 	margin-bottom: 10px;
 	display: inline-block;
 	border: 3px solid #e95420;
-}
-.header_wrapper {
-	text-align: center;
 }
 
 .mlhbadge img{
