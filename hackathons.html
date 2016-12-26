@@ -10,66 +10,32 @@ permalink: /hackathons/
   </a>
 </div>
 <br>
-<h1>Upcoming Hackathon opportunities <small>2016-2017</small></h1>
+<h1>Upcoming Hackathon opportunities <small>Spring 2017</small></h1>
 <br>
+
 <div class="row">
+  {% for item in site.data.hackathons %}
   <div class="col-sm-6 col-md-3">
     <div class="thumbnail">
-      <div class="text-center localhackday">
-        <img src="/img/hackathons/localhackday.svg" text-align: center height="200" width="242">
-      </div>
-      <div class="caption text-center">
-        <h3>Local Hack Day</h3>
-        <hr>
-        <p>December 3rd, 2016 </p>
-        <p>Multiple Locations</p>
-        <p><a href="https://localhackday.mlh.io/" target="_blank" class="btn btn-primary" role="button">Register</a></p>
+      <div>
+        <img class="thumbnail_img" style="background: #215560" src="{{site.baseurl}}/img/hackathons/{{item[1].image}}"/>
+          {% cycle 'group1': '', '', '', '','
       </div>
     </div>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <div class="text-center hackthevalley">
-        <img src="/img/hackathons/hackthevalley.png" text-align: center height="200" width="242">
-      </div>
-      <div class="caption text-center">
-        <h3>Hack the Valley</h3>
+    <div class="caption text-center">' %}
+      <div class="text-center">
+        <h3>{{ item[1].name }}</h3>
         <hr>
-        <p>January 7th - 8th, 2017 </p>
-        <p>Toronto, ON</p>
-        <p><a href="https://www.hackvalley.com/" target="_blank" class="btn btn-primary" role="button">Register</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <div class="text-center pennapps">
-        <img src="/img/hackathons/pennapps.png">
-      </div>
-      <div class="caption text-center">
-        <h3>PENNAPPSXV</h3>
-        <hr>
-        <p>January 20th - 22nd, 2017 </p>
-        <p>Philadelphia, PA</p>
-        <p><a href="http://2017w.pennapps.com/" target="_blank" class="btn btn-primary" role="button">Register</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <div class="text-center uofthacks">
-        <img src="/img/hackathons/uofthacks.png">
-      </div>
-      <div class="caption text-center">
-        <h3>UOFTHACKS IV</h3>
-        <hr>
-        <p>January 20th - 22nd, 2017 </p>
-        <p>Toronto, ON</p>
-        <p><a href="https://uofthacks.com/" target="_blank" class="btn btn-primary" role="button">Register</a></p>
+        <p>{{ item[1].date }}</p>
+        <p>{{ item[1].location }}</p>
+        <p><a href="{{ item[1].link }}" target="_blank" class="btn btn-primary" role="button">Register</a></p>
       </div>
     </div>
   </div>
 </div>
+{% endfor %}
+
+
 <div class="row">
     <div class="col-md-6">
       <h3>  Find out more hackathons at: </h3>
