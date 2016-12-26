@@ -32,15 +32,8 @@
   z-index:10000
 }
 
-.localhackday {
-  background: #353535;
-}
-.hackthevalley{
-  background: #215560;
-}
-.pennapps{
-  background: #2C3E50;
-}
-.uofthacks{
-  background: #F5F5F5;
+.thumbnail_img{
+  text-align: center;
+  max-height: 100%;
+  max-width: 100%;
 }
