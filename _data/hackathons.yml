@@ -1,10 +1,3 @@
-hackthevalley:
-  name: Hack the Valley
-  image: hackthevalley.png
-  date: January 7th - 8th, 2017
-  location: Toronto, ON
-  link: https://www.hackvalley.com/
-
 deltahacks:
   name: Delta Hacks III
   image: deltahacks.png
@@ -17,7 +10,7 @@ utshacks:
   image: utshacks.jpg
   date: February 10th - 11st, 2017
   location: Toronto, ON
-  link: https://www.facebook.com/events/230248960740753/
+  link: http://www.utshacks.com/
 
 ieee:
   name: IEEE Hackathon
@@ -25,3 +18,10 @@ ieee:
   date: February 18th - 19th, 2017
   location: Toronto, ON
   link: http://ieeehardwarehackathon.org/
+
+fraser:
+  name: Fraser Hacks
+  image: fraser.png
+  date: February 18th, 2017
+  location: Mississauga, ON
+  link: https://www.eventbrite.ca/e/fraser-hacks-tickets-30046212029
