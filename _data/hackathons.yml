@@ -1,10 +1,3 @@
-deltahacks:
-  name: Delta Hacks III
-  image: deltahacks.png
-  date: January 28th - 29th, 2017
-  location: Hamilton, ON
-  link: http://deltahacks.com/
-
 utshacks:
   name: UTS Hacks I
   image: utshacks.jpg
@@ -25,3 +18,10 @@ fraser:
   date: February 18th, 2017
   location: Mississauga, ON
   link: https://www.eventbrite.ca/e/fraser-hacks-tickets-30046212029
+
+massey:
+  name: MasseyHacks III
+  image: massey.png
+  date: April 1st - 2nd, 2017
+  location: Windsor, ON
+  link: https://masseyhacks.ca/
