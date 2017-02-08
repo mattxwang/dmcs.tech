@@ -1,23 +1,23 @@
-utshacks:
-  name: UTS Hacks I
-  image: utshacks.jpg
-  date: February 10th - 11st, 2017
-  location: Toronto, ON
-  link: http://www.utshacks.com/
-
-ieee:
-  name: IEEE Hackathon
-  image: ieee.jpg
-  date: February 18th - 19th, 2017
-  location: Toronto, ON
-  link: http://ieeehardwarehackathon.org/
-
 fraser:
   name: Fraser Hacks
   image: fraser.png
   date: February 18th, 2017
   location: Mississauga, ON
   link: https://www.eventbrite.ca/e/fraser-hacks-tickets-30046212029
+
+ruhacks:
+  name: RU Hacks
+  image: ruhacks.png
+  date: March 17th - 19th, 2017
+  location: Toronto, ON
+  link: http://www.ruhacks.com/
+
+mhacks:
+  name: MHacks 9
+  image: mhacks.jpg
+  date: March 24th - 26th, 2017
+  location: University of Michigan, MI
+  link: https://mhacks.org/
 
 massey:
   name: MasseyHacks III
