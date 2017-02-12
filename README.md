@@ -18,30 +18,30 @@ You'll need a few things:
 First things first, we need to install Jekyll. We assume that you have Git and Ruby installed. If you don't, please visit the links above to install them. We also assume you're using a [Unix-based system](https://en.wikipedia.org/wiki/Unix); if you aren't, follow jekyll's alternatives instruction page.
 
 Type in your command line:
-```
-gem install jekyll
+```bash
+$ gem install jekyll
 ```
 
 After Jekyll completes its setup, clone the git repository:
-```
-git clone https://github.com/uccdmcs/dmcs.tech.git
+```bash
+$ git clone https://github.com/uccdmcs/dmcs.tech.git
 ```
 
 Note: if you plan to use the "challenger" folder, please use the `--recursive` flag when cloning the repository, like so:
 
-```
-git clone --recursive https://github.com/uccdmcs/dmcs.tech.git
+```bash
+$ git clone --recursive https://github.com/uccdmcs/dmcs.tech.git
 ```
 
 
 Then, cd into the repository:
-```
-cd dmcs.tech
+```bash
+$ cd dmcs.tech
 ```
 
 Inside the repository, all you'll need to do is "serve" the site. Type the following into your command line:
-```
-jekyll serve
+```bash
+$ jekyll serve
 ```
 
 After that, you should get a response that looks something like this:
