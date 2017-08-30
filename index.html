@@ -16,12 +16,13 @@ title: DMCS Club
               <img class="img-responsive" src="{{site.baseurl}}/img/dmcs-transparent.png" alt="DMCS Logo" />
             </div>
             <div class="col-sm-8">
-              <h1>DMCS Club</h1>
-              <h2><small><span id="quote"></span></small></h2>
+              <h1>UCC's DMCS Club</h1>
+              <h2><small><span id="quote">Finding quote...</span></small></h2>
               <p class="lead">
-                Welcome to the <b>D</b>igital <b>M</b>edia and <b>C</b>omputer <b>S</b>cience
+                Welcome to the <b>D</b>igital <b>M</b>edia and <b>C</b>omputer <b>S</b>cience Club at Upper Canada College
               </p>
-              <a href="{{site.baseurl}}/about/" class="btn btn-primary">Learn More</a>
+              <a class="btn btn-primary" href="{{site.baseurl}}/about/">Learn More</a>
+              <a class="btn btn-primary" onclick="randomQuote()">Another Quote</a>
             </div>
           </div>
         </div>
@@ -31,19 +32,30 @@ title: DMCS Club
       quotes = [
          "Spiders are great web developers.",
          "Computers aren't scary: they don't byte!",
-         "I love long walks(on the beach)",
          "It's not a bug, it's a feature!",
          "There are 10 kinds of people in the world: those who understand binary, and those who don't.",
+         "Understanding a web developer's handwriting is hard; it's almost like a code",
+         "Taylor Swift only uses &lt;style>",
          "[\"hip\",\"hip\"]",
+         "&lt;you're it>",
+         "My perfect date would be DD/MM/YYYY",
          "To understand what recursion is, you must first understand recursion.",
          "A SQL query walks into a bar, sees two tables and asks, \"Can I join you?\"",
+         "Things aren't always #000000 and #FFFFFF, but shades of #777777",
          "Error 404: quote not found",
+         "Error 418: quote is a teapot",
+         "I wish we had a longer summer &lt;/br>",
          "💻 💾 🎛 🖥",
          "#bermuda-triangle {display: none;}",
-         "#china {border-top-style: solid;}"
+         "#china {border-top-style: solid;}",
+         "#titanic {float: none;}",
+         "#tower-of-pisa {font-style: italic;}"
       ];
-      var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-      $("#quote").html(randomQuote);
+      function randomQuote(){
+        random = quotes[Math.floor(Math.random() * quotes.length)];
+        $("#quote").html(random);
+      }
+      randomQuote()
     </script>
   </body>
 
